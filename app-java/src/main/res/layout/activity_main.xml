@@ -73,11 +73,19 @@
         android:text="@string/disconnect"
         />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
     <Button
-        android:id="@+id/audioBtn"
+        android:id="@+id/buttonPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Audio" />
+        android:text="Play" />
 
 
   </LinearLayout>

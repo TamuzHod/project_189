@@ -1,7 +1,10 @@
 package com.github.pwittchen.neurosky.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -34,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
     neuroSky = createNeuroSky();
+    Button playbtn = (Button)findViewById(R.id.buttonPlay);
+
+    playbtn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intent = new Intent(MainActivity.this, AudioPlayer.class);
+        // start the activity connect to the specified class
+        startActivity(intent);
+      }
+    });
   }
 
   @Override protected void onResume() {
@@ -123,13 +136,6 @@ public class MainActivity extends AppCompatActivity {
   }
 
 
-  Button yourButton = (Button) findViewById(R.id.audioBtn);
-
-  yourButton.setOnClickListener(new OnClickListener(){
-      public void onClick(View v){
-        startActivity(new Intent(YourCurrentActivity.this, YourNewActivity.class));
-      }
-    });
 
 
 }

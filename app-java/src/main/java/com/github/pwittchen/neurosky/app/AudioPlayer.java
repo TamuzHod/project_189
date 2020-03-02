@@ -2,6 +2,7 @@ package com.github.pwittchen.neurosky.app;
 
 import android.os.Bundle;
 
+import com.github.pwittchen.neurosky.library.message.enums.Signal;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -19,6 +20,7 @@ import android.widget.Toast;
 import java.util.concurrent.TimeUnit;
 
 
+
 public class AudioPlayer extends AppCompatActivity {
 
     private ImageButton forwardbtn, backwardbtn, pausebtn, playbtn;
@@ -34,15 +36,7 @@ public class AudioPlayer extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         backwardbtn = (ImageButton)findViewById(R.id.btnBackward);
         forwardbtn = (ImageButton)findViewById(R.id.btnForward);
         playbtn = (ImageButton)findViewById(R.id.btnPlay);
@@ -50,7 +44,7 @@ public class AudioPlayer extends AppCompatActivity {
         songName = (TextView)findViewById(R.id.txtSname);
         startTime = (TextView)findViewById(R.id.txtStartTime);
         songTime = (TextView)findViewById(R.id.txtSongTime);
-        songName.setText("Baitikochi Chuste");
+        songName.setText("Song");
         mPlayer = MediaPlayer.create(this, R.raw.asdf);
         songPrgs = (SeekBar)findViewById(R.id.sBar);
         songPrgs.setClickable(false);
@@ -131,6 +125,42 @@ public class AudioPlayer extends AppCompatActivity {
             hdlr.postDelayed(this, 100);
         }
     };
+
+    private void handleSignalChange(final Signal signal) {
+        switch (signal) {
+            case ATTENTION:
+                if (signal.getValue() >= 50) {
+                    Toast.makeText(AudioPlayer.this, "Playing Audio", Toast.LENGTH_SHORT).show();
+                    mPlayer.start();
+                    eTime = mPlayer.getDuration();
+                    sTime = mPlayer.getCurrentPosition();
+                    if (oTime == 0) {
+                        songPrgs.setMax(eTime);
+                        oTime = 1;
+                    }
+                    songTime.setText(String.format("%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes(eTime),
+                            TimeUnit.MILLISECONDS.toSeconds(eTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(eTime))));
+                    startTime.setText(String.format("%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes(sTime),
+                            TimeUnit.MILLISECONDS.toSeconds(sTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(sTime))));
+                    songPrgs.setProgress(sTime);
+                    hdlr.postDelayed(UpdateSongTime, 100);
+                    pausebtn.setEnabled(true);
+                    playbtn.setEnabled(false);
+                }
+                ;
+                break;
+            case MEDITATION:
+                break;
+            case BLINK:
+                if (signal.getValue() >= 50) {
+                    mPlayer.pause();
+                    pausebtn.setEnabled(false);
+                    playbtn.setEnabled(true);
+                    Toast.makeText(getApplicationContext(), "Pausing Audio", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+        }
+    }
 
 
 }
