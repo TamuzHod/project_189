@@ -14,14 +14,6 @@
       android:paddingRight="10dp">
 
     <TextView
-        android:id="@+id/txtVw1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Now Playing: "
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
         android:id="@+id/txtSname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,35 +58,6 @@
         android:contentDescription="@+id/imageButton3"
         android:src="@android:drawable/ic_media_ff" />
 
-    <TextView
-        android:id="@+id/txtStartTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/sBar"
-        android:text="0 min, 0 sec" />
-
-    <SeekBar
-        android:id="@+id/sBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnBackward"
-        android:layout_toLeftOf="@+id/txtSongTime"
-        android:layout_toRightOf="@+id/txtStartTime" />
-
-    <TextView
-        android:id="@+id/txtSongTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/sBar"
-        android:layout_toRightOf="@+id/btnForward"
-        android:text="0 min, 0 sec " />
-
-    <TextView
-        android:id="@+id/tv_state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/waiting_for_state" />
   </RelativeLayout>
 
   <LinearLayout
@@ -102,14 +65,6 @@
       android:layout_height="match_parent"
       android:orientation="vertical"
       >
-
-    <TextView
-        android:id="@+id/tv_attention"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/waiting_for_attention_signal"
-        />
 
     <TextView
         android:id="@+id/tv_meditation"
@@ -127,25 +82,50 @@
         android:text="@string/waiting_for_blink_signal"
         />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <TextView
+        android:id="@+id/tv_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/waiting_for_attention_signal" />
+
+    <TextView
+        android:id="@+id/txtSongTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 min, 0 sec " />
+
+    <TextView
+        android:id="@+id/txtStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 min, 0 sec" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/waiting_for_state" />
+
+    <SeekBar
+        android:id="@+id/sBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/btn_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/connect"
-        />
-
-    <Button
-        android:id="@+id/btn_start_monitoring"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/start_monitoring"
-        />
-
-    <Button
-        android:id="@+id/btn_stop_monitoring"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/stop_monitoring"
         />
 
     <Button
@@ -155,19 +135,19 @@
         android:text="@string/disconnect"
         />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="64dp" />
-
     <Button
         android:id="@+id/buttonPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Play" />
+
+    <TextView
+        android:id="@+id/txtVw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Now Playing: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
   </LinearLayout>

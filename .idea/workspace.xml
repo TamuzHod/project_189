@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bddeaf-0e17-45e8-a3f8-8ebd57980a4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,7 +26,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_final_Documents_GitHub_project_189_library_libs_ThinkGear_jar_unspecified_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_Tamuz_StudioProjects_project_189_library_libs_ThinkGear_jar_unspecified_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_Tamuz_StudioProjects_project_189_library_libs_ThinkGear_jar_unspecified_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_Tamuz_StudioProjects_test_library_libs_ThinkGear_jar_unspecified_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-java/app-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app-java/app-java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java" afterDir="false" />
@@ -34,7 +36,7 @@
       <change beforePath="$PROJECT_DIR$/app-rxjava/app-rxjava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app-rxjava/app-rxjava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app-rxkotlin/app-rxkotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app-rxkotlin/app-rxkotlin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library/library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_189.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_Edited_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="0815613d" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -63,50 +65,72 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="242" column="31" lean-forward="true" selection-start-line="242" selection-start-column="31" selection-end-line="242" selection-end-column="31" />
+            <state relative-caret-position="17">
+              <caret line="233" column="19" selection-start-line="233" selection-start-column="19" selection-end-line="233" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3398#3399#0" expanded="true" />
                 <element signature="e#3441#3442#0" expanded="true" />
                 <element signature="e#3582#3583#0" expanded="true" />
                 <element signature="e#3626#3627#0" expanded="true" />
-                <element signature="e#2367#2368#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
-                <element signature="e#10517#10518#0" expanded="true" />
-                <element signature="e#10619#10620#0" expanded="true" />
-                <element signature="e#10718#10719#0" expanded="true" />
+                <element signature="e#10486#10487#0" expanded="true" />
+                <element signature="e#10523#10524#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/AudioPlayer.java">
+        <entry file="file://$PROJECT_DIR$/library/src/main/java/com/github/pwittchen/neurosky/library/NeuroSky.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="72" column="11" selection-start-line="52" selection-start-column="7" selection-end-line="72" selection-end-column="11" />
+            <state relative-caret-position="169">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#1998#1999#0" expanded="true" />
+                <element signature="e#2685#2686#0" expanded="true" />
+                <element signature="e#2734#2735#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/bluetooth/BluetoothAdapter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="145" column="32" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
+              <folding>
+                <element signature="e#5279#5280#0" expanded="true" />
+                <element signature="e#5330#5331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/library/libs/ThinkGear.jar!/com/neurosky/thinkgear/TGDevice.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="170" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="2397">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/main/java/com/github/pwittchen/neurosky/library/message/enums/Signal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="459">
               <caret line="45" column="21" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="21" />
             </state>
           </provider>
@@ -114,36 +138,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_audio_player.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/content_audio_player.xml">
-          <provider editor-type-id="text-editor">
-            <state>
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-java/src/main/res/drawable/ic_launcher_background.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -165,6 +165,8 @@
       <find>play</find>
       <find>lay</find>
       <find>handleSignalChange</find>
+      <find>conne</find>
+      <find>connect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,45 +183,19 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1617" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project_189" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_189" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_189" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_189" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_189" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_189" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_189" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_189" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -495,11 +471,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1536" height="864" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17615177" />
-      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4978903" visible="true" weight="0.17449665" />
+      <window_info id="Structure" order="2" sideWeight="0.5021097" side_tool="true" weight="0.17449665" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
@@ -507,16 +484,16 @@
       <window_info id="Resources Explorer" order="7" weight="0.32967034" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.32946146" />
-      <window_info anchor="bottom" id="Run" order="1" visible="true" weight="0.22950819" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Logcat" order="2" weight="0.32946146" />
       <window_info anchor="bottom" id="TODO" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.42492917" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50067115" side_tool="true" weight="0.3611898" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.34836066" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49932885" weight="0.5410765" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.3286119" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -524,10 +501,45 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java</url>
+          <line>301</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java</url>
+          <line>299</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>preconditions.canConnect(device)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app-java/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/content_audio_player.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -536,27 +548,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/drawable-v24/ic_launcher_foreground.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app-java/src/main/res/drawable/ic_launcher_background.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_audio_player.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/content_audio_player.xml">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/drawable-v24/ic_launcher_foreground.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/AudioPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -568,36 +564,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/github/pwittchen/neurosky/library/message/enums/Signal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="459">
           <caret line="45" column="21" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_audio_player.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-java/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/bluetooth/BluetoothAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="145" column="32" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
+          <folding>
+            <element signature="e#5279#5280#0" expanded="true" />
+            <element signature="e#5330#5331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/library/libs/ThinkGear.jar!/com/neurosky/thinkgear/TGDevice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/github/pwittchen/neurosky/library/NeuroSky.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#2685#2686#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-runtime/10.2.1/e3db86e2a32db9e9e9f6e1661907c60d9c077d9c/butterknife-runtime-10.2.1-sources.jar!/butterknife/internal/DebouncingOnClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-java/build/generated/ap_generated_sources/debug/out/com/github/pwittchen/neurosky/app/MainActivity_ViewBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#1422#1548#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app-java/src/main/java/com/github/pwittchen/neurosky/app/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="242" column="31" lean-forward="true" selection-start-line="242" selection-start-column="31" selection-end-line="242" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="233" column="19" selection-start-line="233" selection-start-column="19" selection-end-line="233" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3398#3399#0" expanded="true" />
             <element signature="e#3441#3442#0" expanded="true" />
             <element signature="e#3582#3583#0" expanded="true" />
             <element signature="e#3626#3627#0" expanded="true" />
-            <element signature="e#2367#2368#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#10517#10518#0" expanded="true" />
-            <element signature="e#10619#10620#0" expanded="true" />
-            <element signature="e#10718#10719#0" expanded="true" />
+            <element signature="e#10486#10487#0" expanded="true" />
+            <element signature="e#10523#10524#0" expanded="true" />
           </folding>
         </state>
       </provider>

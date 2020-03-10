@@ -231,25 +231,25 @@ public class MainActivity extends AppCompatActivity {
         playbtn.setEnabled(false);
     }
 
-    private int [] movingAvrgBlink = new int [4];
+    private int [] movingAvrgBlink = new int [3];
+    private int [] movingAvrgBlink_Atten = new int [5];
+
     private int oldestBlinkIndex = 0;
-    Boolean recivedUserCommand = false;
-    int lastCommnad = 0;
+
     private void hundleBlink(final Signal blink){
         Log.d(LOG_TAG, arrToString(movingAvrgBlink));
-        movingAvrgBlink[oldestBlinkIndex % movingAvrgBlink.length] = blink.getValue();
+        Log.d(LOG_TAG, arrToString(movingAvrgBlink_Atten));
+
+        movingAvrgBlink[oldestBlinkIndex % movingAvrgBlink.length] = blink.getValue() > 50 ? blink.getValue() : 0;
+        movingAvrgBlink_Atten[oldestBlinkIndex % movingAvrgBlink.length] = blink.getValue() > 50 ? blink.getValue() : 0;
+
         oldestBlinkIndex ++;
 
-        if(recivedUserCommand){
-            lastCommnad++;
-            if(lastCommnad > 20)
-                lastCommnad = 0;
-                recivedUserCommand = false;
-            return;
-        }
-        Log.d(LOG_TAG, String.format("%f avg", getAvrage(movingAvrgBlink)));
-        if(getAvrage(movingAvrgBlink) > 70){
-            recivedUserCommand = true;
+        Log.d(LOG_TAG, String.format("%f avg blink", getAvrage(movingAvrgBlink)));
+        Log.d(LOG_TAG, String.format("%f avg att", getAvrage(movingAvrgBlink_Atten)));
+
+        if(getAvrage(movingAvrgBlink) > 50){
+            movingAvrgBlink = new int [3];
             if(playbtn.isEnabled()) {
                 Log.d(LOG_TAG, "Play");
                 playMusic();
@@ -258,6 +258,10 @@ public class MainActivity extends AppCompatActivity {
                 pauseMusic();
 
             }
+        } else if(getAvrage(movingAvrgBlink_Atten) > 60){
+            movingAvrgBlink_Atten = new int [5];
+
+            Log.d(LOG_TAG, "over 9000");
         }
     }
 
@@ -298,21 +302,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
             Log.d(LOG_TAG, e.getMessage());
         }
+
     }
 
     @OnClick(R.id.btn_disconnect)
     void disconnect() {
         neuroSky.disconnect();
-    }
-
-    @OnClick(R.id.btn_start_monitoring)
-    void startMonitoring() {
-        neuroSky.start();
-    }
-
-    @OnClick(R.id.btn_stop_monitoring)
-    void stopMonitoring() {
-        neuroSky.stop();
     }
 
 

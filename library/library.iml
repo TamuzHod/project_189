@@ -158,7 +158,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy-agent:1.10.5@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.6@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\Tamuz\StudioProjects\project_189\library\libs\ThinkGear.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\Tamuz\StudioProjects\test\library\libs\ThinkGear.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxjava:2.2.17@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
